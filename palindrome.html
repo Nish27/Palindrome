@@ -1,9 +1,16 @@
 <html>
 <header>
+	<style>
 	
+	#common 
+	{
+		text-align:center;
+	}
+	</style>
 </header>
 <body>
 <title>Palindrome</title>
+
 <script>
 function checkIfPallendrome() {
 var input = document.getElementById("inputText").value;
@@ -28,7 +35,11 @@ for(i=input.length-1,k=0; i>=0; k++, i--) {
 }
 </script>
 
-<input type="text" id="inputText" onblur="checkIfPallendrome()"> </input>
-<p id="result"> </p>
+<div id="common">
+	<p>Check if its a PALINDROME OR NOT</p>
+	<input type="text" id="inputText" onblur="checkIfPallendrome()"> </input>
+	<p id="result"> </p>
+</div>
+
 </body>
 </html>
