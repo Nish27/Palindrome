@@ -1,49 +1,15 @@
 <html>
 <header>
-	<style>
-	body {
-		background-color:rgb(203, 241, 127);
-	}
-
-	#common {
-		text-align:center;
-		text-shadow: 0.1px 1px black;
-		background-color:tomato;
-	}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+	<script src="checkPalindrome.js"></script>
 </header>
 <body>
 <title>Palindrome</title>
 
-<script>
-function checkIfPallendrome() {
-var input = document.getElementById("inputText").value;
-console.log(input);
-console.log(input.length);
-var pallendrome=true;
-var res;
-
-for(i=input.length-1,k=0; i>=0; k++, i--) {
-		if(!(input[k]==(input[i]))) {
-			pallendrome=false;
-			break;
-		}
-	}
-
-	if(pallendrome) {
-		res="Its a PALINDROME";
-	}else{
-		res="Its not a PALINDROME";	
-	}
-	document.getElementById("result").innerHTML=res;
-}
-</script>
-
 <div id="common">
 	<p>Check if its a PALINDROME OR NOT</p>
 	<p>Please enter a word (& PRESS TAB):</p>
-	<input type="text" id="inputText" onblur="checkIfPallendrome()"> </input>
+	<input type="text" id="inputText" onblur="checkIfPalindrome()"> </input>
 	<p id="result"> </p>
 </div>
 

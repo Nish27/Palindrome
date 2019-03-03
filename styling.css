@@ -1,0 +1,9 @@
+body {
+	background-color:rgb(203, 241, 127);
+}
+
+#common {
+	text-align:center;
+	text-shadow: 0.1px 1px black;
+	background-color:tomato;
+}
