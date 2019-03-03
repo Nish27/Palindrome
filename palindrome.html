@@ -1,11 +1,16 @@
 <html>
 <header>
 	<style>
-	
-	#common 
-	{
-		text-align:center;
+	body {
+		background-color:rgb(203, 241, 127);
 	}
+
+	#common {
+		text-align:center;
+		text-shadow: 0.1px 1px black;
+		background-color:tomato;
+	}
+
 	</style>
 </header>
 <body>
@@ -27,9 +32,9 @@ for(i=input.length-1,k=0; i>=0; k++, i--) {
 	}
 
 	if(pallendrome) {
-		res="Its a pallindrome";
+		res="Its a PALINDROME";
 	}else{
-		res="Its not a pallindrome";	
+		res="Its not a PALINDROME";	
 	}
 	document.getElementById("result").innerHTML=res;
 }
