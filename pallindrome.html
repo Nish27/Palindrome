@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<script>
+function checkIfPallendrome() {
+var input = document.getElementById("inputText").value;
+console.log(input);
+console.log(input.length);
+var pallendrome=true;
+var res;
+
+for(i=input.length-1,k=0; i>=0; k++, i--) {
+		if(!(input[k]==(input[i]))) {
+			pallendrome=false;
+			break;
+		}
+	}
+
+	if(pallendrome) {
+		res="Its a pallindrome";
+	}else{
+		res="Its not a pallindrome";	
+	}
+	document.getElementById("result").innerHTML=res;
+}
+</script>
+
+<input type="text" id="inputText" onblur="checkIfPallendrome()"> </input>
+<p id="result"> </p>
+</body>
+</html>
